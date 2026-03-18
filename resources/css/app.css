@@ -1,10 +1,38 @@
 @import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
 @theme inline {
     --font-sans: Instrument Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    /* Primary color scale */
+    --color-primary-50: #F1F7FE;
+    --color-primary-100: #E2EFFC;
+    --color-primary-200: #BEDEF9;
+    --color-primary-300: #84C2F5;
+    --color-primary-400: #43A4ED;
+    --color-primary-500: #1B88DC;
+    --color-primary-600: #0E6ABB;
+    --color-primary-700: #0C5598;
+    --color-primary-800: #0F4C83; /* AG&R Blue */
+    --color-primary-900: #123D68;
+    --color-primary-950: #0C2745;
+
+
+    /* Secondary color scale - Green */
+    --color-secondary-50: #EBFEF5;
+    --color-secondary-100: #CFFCE6;
+    --color-secondary-200: #A4F6D1;
+    --color-secondary-300: #69ECBA;
+    --color-secondary-400: #2DDA9E;
+    --color-secondary-500: #08B780; /* AG&R Green */
+    --color-secondary-600: #009D6E;
+    --color-secondary-700: #007D5B;
+    --color-secondary-800: #02634A;
+    --color-secondary-900: #03513E;
+    --color-secondary-950: #002E24;
 }
 
 @import "flowbite/src/themes/default";
